@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-  <meta name="description" content="API docs for the getConversationListByConversaionIds method from the TIMConversationManager class, for the Dart programming language.">
-  <title>getConversationListByConversaionIds method - TIMConversationManager class - tim_conversation_manager library - Dart API</title>
+  <meta name="description" content="API docs for the getConversationListByConversationIds method from the TIMConversationManager class, for the Dart programming language.">
+  <title>getConversationListByConversationIds method - TIMConversationManager class - tim_conversation_manager library - Dart API</title>
 
 
   
@@ -31,9 +31,9 @@
     <li><a href="../../index.html">tencent_cloud_chat_sdk</a></li>
     <li><a href="../../native_im_adapter_tim_conversation_manager/native_im_adapter_tim_conversation_manager-library.html">native_im&#47;adapter&#47;tim_conversation_manager.dart</a></li>
     <li><a href="../../native_im_adapter_tim_conversation_manager/TIMConversationManager-class.html">TIMConversationManager</a></li>
-    <li class="self-crumb">getConversationListByConversaionIds method</li>
+    <li class="self-crumb">getConversationListByConversationIds method</li>
   </ol>
-  <div class="self-name">getConversationListByConversaionIds</div>
+  <div class="self-name">getConversationListByConversationIds</div>
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
@@ -57,14 +57,14 @@
     data-above-sidebar="native_im_adapter_tim_conversation_manager&#47;TIMConversationManager-class-sidebar.html"
     data-below-sidebar="">
     <div>
-<h1><span class="kind-method">getConversationListByConversaionIds</span> method 
+<h1><span class="kind-method">getConversationListByConversationIds</span> method 
 </h1></div>
 
     <section class="multi-line-signature">
       
 
 <span class="returntype"><a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../models_v2_tim_value_callback/V2TimValueCallback-class.html">V2TimValueCallback</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../models_v2_tim_conversation/V2TimConversation-class.html">V2TimConversation</a></span>&gt;</span></span>&gt;</span></span>&gt;</span></span>
-<span class="name ">getConversationListByConversaionIds</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="getConversationListByConversaionIds-param-conversationIDList">{<span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">conversationIDList</span>}</span></li>
+<span class="name ">getConversationListByConversationIds</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="getConversationListByConversationIds-param-conversationIDList">{<span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">conversationIDList</span>}</span></li>
 </ol>)
 
       
@@ -77,14 +77,14 @@
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">Future&lt;V2TimValueCallback&lt;List&lt;V2TimConversation&gt;&gt;&gt;
-    getConversationListByConversaionIds({
+    getConversationListByConversationIds({
   required List&lt;String&gt; conversationIDList,
 }) async {
   if (!TIMManager.instance.isInitSDK()) {
     return V2TimValueCallback&lt;List&lt;V2TimConversation&gt;&gt;(code: TIMErrCode.ERR_SDK_NOT_INITIALIZED.value, desc: &quot;sdk not init&quot;);
   }
 
-  String userData = Tools.generateUserData(&#39;getConversationListByConversaionIds&#39;);
+  String userData = Tools.generateUserData(&#39;getConversationListByConversationIds&#39;);
   Completer&lt;V2TimValueCallback&lt;List&lt;V2TimConversation&gt;&gt;&gt; completer = Completer();
   NativeLibraryManager.timValueCallback2Future&lt;List&lt;V2TimConversation&gt;&gt;(userData, completer);
 
@@ -133,7 +133,7 @@
     <li><a href="../../index.html">tencent_cloud_chat_sdk</a></li>
     <li><a href="../../native_im_adapter_tim_conversation_manager/native_im_adapter_tim_conversation_manager-library.html">tim_conversation_manager</a></li>
     <li><a href="../../native_im_adapter_tim_conversation_manager/TIMConversationManager-class.html">TIMConversationManager</a></li>
-    <li class="self-crumb">getConversationListByConversaionIds method</li>
+    <li class="self-crumb">getConversationListByConversationIds method</li>
 </ol>
 
 

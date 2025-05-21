@@ -368,7 +368,7 @@ class TencentCloudChatSdkWeb extends TencentCloudChatSdkPlatform {
           formatedConversationID.replaceAll("group_", "GROUP");
       return formatedConversationID;
     }).toList();
-    return await _v2TIMConversationManager.getConversationListByConversaionIds(
+    return await _v2TIMConversationManager.getConversationListByConversationIds(
         {"conversationIDList": formatedConversationIDList});
   }
 

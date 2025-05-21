@@ -616,7 +616,7 @@ abstract class TencentCloudChatSdkPlatform extends PlatformInterface {
     required List<String> conversationIDList,
   }) async {
     throw UnimplementedError(
-        "getConversationListByConversaionIds() has not been implemented");
+        "getConversationListByConversationIds() has not been implemented");
   }
 
   Future<void> setConversationListener(

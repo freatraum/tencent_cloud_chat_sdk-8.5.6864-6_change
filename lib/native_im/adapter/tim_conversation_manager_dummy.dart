@@ -45,7 +45,7 @@ class TIMConversationManager {
   }
 
   Future<V2TimValueCallback<List<V2TimConversation>>>
-      getConversationListByConversaionIds({
+      getConversationListByConversationIds({
     required List<String> conversationIDList,
   }) async {
     return V2TimValueCallback<List<V2TimConversation>>.fromBool(false, "invoke error");

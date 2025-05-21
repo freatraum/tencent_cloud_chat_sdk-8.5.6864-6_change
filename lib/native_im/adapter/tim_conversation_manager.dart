@@ -156,7 +156,7 @@ class TIMConversationManager {
       return V2TimValueCallback<List<V2TimConversation>>(code: TIMErrCode.ERR_SDK_NOT_INITIALIZED.value, desc: "sdk not init");
     }
 
-    String userData = Tools.generateUserData('getConversationListByConversaionIds');
+    String userData = Tools.generateUserData('getConversationListByConversationIds');
     Completer<V2TimValueCallback<List<V2TimConversation>>> completer = Completer();
     NativeLibraryManager.timValueCallback2Future<List<V2TimConversation>>(userData, completer);
 

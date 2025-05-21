@@ -91,7 +91,7 @@ class V2TIMConversationManager {
   }
 
   // 和getConversationList 调用的是相同的方法, 此项接口返回的数据没有getConversationProfile全
-  Future<dynamic> getConversationListByConversaionIds(param) async {
+  Future<dynamic> getConversationListByConversationIds(param) async {
     try {
       var res = await wrappedPromiseToFuture(
           timeweb!.getConversationList(param["conversationIDList"]));

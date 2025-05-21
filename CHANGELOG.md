@@ -1,5 +1,5 @@
 ## 8.5.6864+6
-* The interface getConversationListByConversaionIds is changed to getConversationListByConversationIds.
+* The interface getConversationListByConversationIds is changed to getConversationListByConversationIds.
 * Solve the 'getConversationListByConversationIds' interface parameter problem.
 
 ## 8.5.6864+5
