@@ -7,33 +7,60 @@ import 'package:tencent_cloud_chat_sdk/enum/group_add_opt_enum.dart';
 import 'package:tencent_cloud_chat_sdk/enum/group_application_type_enum.dart';
 import 'package:tencent_cloud_chat_sdk/enum/group_member_filter_enum.dart';
 import 'package:tencent_cloud_chat_sdk/enum/group_member_role_enum.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_callback.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_application.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_application_result.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_change_info.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_get_members_info_list_param.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_handle_application_param.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_info.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_info_modify_param.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_info_result.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_invite_user_to_group_param.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_kick_group_member_param.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member_change_info.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member_full_info.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member_info.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member_info_result.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member_operation_result.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member_info_modify_param.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member_search_param.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member_search_result.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_search_param.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_value_callback.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_create_param.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_topic_info_set_param.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_topic_info.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_topic_info_result.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_topic_operation_result.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_callback.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_callback.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_application.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_application.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_application_result.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_application_result.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_change_info.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_change_info.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_get_members_info_list_param.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_get_members_info_list_param.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_handle_application_param.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_handle_application_param.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_info.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_info.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_info_modify_param.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_info_modify_param.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_info_result.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_info_result.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_invite_user_to_group_param.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_invite_user_to_group_param.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_kick_group_member_param.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_kick_group_member_param.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member_change_info.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_member_change_info.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member_full_info.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_member_full_info.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member_info.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_member_info.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member_info_result.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_member_info_result.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member_operation_result.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_member_operation_result.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member_info_modify_param.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_member_info_modify_param.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member_search_param.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_member_search_param.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member_search_result.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_member_search_result.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_search_param.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_search_param.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_value_callback.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_value_callback.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_create_param.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_create_param.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_group_member.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_group_member.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_topic_info_set_param.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_topic_info_set_param.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_topic_info.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_topic_info.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_topic_info_result.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_topic_info_result.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_topic_operation_result.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_topic_operation_result.dart';
 import 'package:tencent_cloud_chat_sdk/native_im/adapter/tim_community_manager.dart';
 import 'package:tencent_cloud_chat_sdk/native_im/adapter/tim_manager.dart';
 import 'package:tencent_cloud_chat_sdk/native_im/bindings/native_imsdk_bindings_generated.dart';

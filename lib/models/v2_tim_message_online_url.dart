@@ -1,7 +1,11 @@
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_file_elem.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_image_elem.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_sound_elem.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_video_elem.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_file_elem.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_file_elem.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_image_elem.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_image_elem.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_sound_elem.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_sound_elem.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_video_elem.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_video_elem.dart';
 import 'package:tencent_cloud_chat_sdk/utils/utils.dart';
 
 /// V2TimMessageOnlineUrl

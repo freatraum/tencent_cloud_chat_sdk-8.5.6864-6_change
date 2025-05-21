@@ -1,8 +1,10 @@
 import 'dart:io';
 
 import 'package:tencent_cloud_chat_sdk/enum/message_elem_type.dart';
-import 'package:tencent_cloud_chat_sdk/models/common_utils.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_elem.dart';
+import 'package:tencent_cloud_chat_sdk/models/common_utils.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/common_utils.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_elem.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_elem.dart';
 import 'package:tencent_cloud_chat_sdk/native_im/adapter/tim_c_enum.dart';
 import 'package:tencent_cloud_chat_sdk/utils/utils.dart';
 

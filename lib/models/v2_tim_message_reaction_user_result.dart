@@ -1,6 +1,7 @@
 import 'dart:convert';
 
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_user_info.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_user_info.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_user_info.dart';
 import 'package:tencent_cloud_chat_sdk/utils/utils.dart';
 
 class V2TimMessageReactionUserResult {

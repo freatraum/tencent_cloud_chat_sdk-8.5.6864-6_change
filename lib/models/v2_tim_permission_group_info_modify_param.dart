@@ -1,5 +1,6 @@
 import 'package:tencent_cloud_chat_sdk/utils/utils.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_permission_group_info.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_permission_group_info.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_permission_group_info.dart';
 
 class V2TimPermissionGroupInfoModifyParam {
   V2TimPermissionGroupInfo info;

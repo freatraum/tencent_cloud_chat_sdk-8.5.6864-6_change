@@ -2,8 +2,10 @@ import 'dart:convert';
 
 import 'package:tencent_cloud_chat_sdk/enum/group_tips_elem_type.dart';
 import 'package:tencent_cloud_chat_sdk/enum/message_elem_type.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_elem.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_user_full_info.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_elem.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_elem.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_user_full_info.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_user_full_info.dart';
 import 'package:tencent_cloud_chat_sdk/native_im/adapter/tim_c_enum.dart';
 import 'package:tencent_cloud_chat_sdk/utils/utils.dart';
 import 'v2_tim_group_change_info.dart';

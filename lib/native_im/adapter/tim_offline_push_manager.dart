@@ -2,10 +2,12 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:ffi';
 
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_offline_push_config.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_offline_push_config.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_offline_push_config.dart';
 import 'package:tencent_cloud_chat_sdk/native_im/adapter/tim_manager.dart';
 import 'package:tencent_cloud_chat_sdk/native_im/bindings/native_library_manager.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_callback.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_callback.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_callback.dart';
 import 'package:tencent_cloud_chat_sdk/native_im/bindings/native_imsdk_bindings_generated.dart';
 import 'package:tencent_cloud_chat_sdk/native_im/tools.dart';
 

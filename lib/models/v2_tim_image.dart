@@ -1,6 +1,7 @@
 import 'dart:io';
 
-import 'package:tencent_cloud_chat_sdk/models/common_utils.dart';
+import 'package:tencent_cloud_chat_sdk/models/common_utils.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/common_utils.dart';
 import 'package:tencent_cloud_chat_sdk/utils/utils.dart';
 
 /// V2TimImage

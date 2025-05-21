@@ -1,5 +1,6 @@
 import 'package:tencent_cloud_chat_sdk/enum/history_message_get_type.dart';
-import 'package:tencent_cloud_chat_sdk/models/v2_tim_message.dart';
+import 'package:tencent_cloud_chat_sdk/models/v2_tim_message.dart'
+    if (dart.library.html) 'package:tencent_cloud_chat_sdk/web/compatible_models/v2_tim_message.dart';
 
 class V2TIMMessageListGetOption {
   /// 拉取消息类型，可以设置拉取本地、云端更老或者更新的消息。
