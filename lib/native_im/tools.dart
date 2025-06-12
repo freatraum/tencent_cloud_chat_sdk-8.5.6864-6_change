@@ -31,11 +31,45 @@ class Tools {
     return originalMap.entries.map((entry) => {key: entry.key, value: entry.value}).toList();
   }
 
-  static Map<String, T> jsonList2Map<T>(List<Map<String, dynamic>> jsonList, String key, String value) {
-    Map<String, T> resultMap = {};
-    for (var item in jsonList) {
-      resultMap[item[key] as String] = item[value] as T;
-    }
+  static Map<String, T> jsonList2Map<T>(List<Map<String, dynamic>>? jsonList, String key, String value) {
+  Map<String, T> resultMap = {};
+  
+  // 检查输入列表是否为空
+  if (jsonList == null || jsonList.isEmpty) {
     return resultMap;
   }
+  
+  // 检查key和value参数是否为空
+  if (key.isEmpty || value.isEmpty) {
+    return resultMap;
+  }
+  
+  for (var item in jsonList) {
+    // 检查item是否为空
+    if (item == null) {
+      continue;
+    }
+    
+    // 检查item是否包含指定的key和value
+    if (!item.containsKey(key) || !item.containsKey(value)) {
+      continue;
+    }
+    
+    // 检查key对应的值是否为String类型且不为空
+    final keyValue = item[key];
+    if (keyValue == null || keyValue is! String || keyValue.isEmpty) {
+      continue;
+    }
+    
+    // 检查value对应的值是否为指定类型T且不为空
+    final valueValue = item[value];
+    if (valueValue == null || valueValue is! T) {
+      continue;
+    }
+    
+    resultMap[keyValue] = valueValue;
+  }
+  
+  return resultMap;
+}
 }
